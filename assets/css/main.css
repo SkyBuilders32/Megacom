@@ -181,7 +181,7 @@ body {
 /* Reausable CSS Classes
 --------------------------------------------------------------*/
 .container {
-  width: 90%;
+  width: 100%;
   max-width: var(--width-container);
   margin: auto;
 }
@@ -410,14 +410,6 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-primary);
-}
-
-/* Breakpoints
---------------------------------------------------------------*/
-@media screen and (min-width: 480px) {
-  .counter__wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media screen and (min-width: 768px) {
