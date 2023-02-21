@@ -409,10 +409,10 @@ body {
 
 /* About
 --------------------------------------------------------------*/
-.inicio, .acerca, .servicio{
+.inicio, .acerca{
   align-items: center;
   font-size: 30px;
-  padding: 50px;
+  margin: 50px;
   text-align: center;
   height: 100px;
 }
