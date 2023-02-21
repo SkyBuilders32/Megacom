@@ -264,8 +264,8 @@ body {
 
 .nav__brand {
   color: var(--color-title);
-  font-size: 20px;
-  font-weight: 900;
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
 }
 
 .nav__buttons {
@@ -409,17 +409,21 @@ body {
 
 /* About
 --------------------------------------------------------------*/
-.inicio, .acerca{
-  align-items: center;
-  font-size: 30px;
-  margin: 30px;
-  text-align: center;
-  height: 200px;
-}
-p{
-  color: #1d2230;
+.about__wrapper {
+  justify-items: center;
 }
 
+.about__content {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: 2rem;
+}
+
+.about__img {
+  border-radius: var(--b-radius);
+}
 
 /* Skills
 --------------------------------------------------------------*/
@@ -982,21 +986,13 @@ p{
 
 /* Breakpoints
 --------------------------------------------------------------*/
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .counter__wrapper {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .inicio, .acerca{
-    margin: 0px;
-    height: 250px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .inicio, .acerca{
-    margin: 0px;
-    height: 200px;
-  }
   .home__wrapper {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
