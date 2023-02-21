@@ -412,9 +412,9 @@ body {
 .inicio, .acerca{
   align-items: center;
   font-size: 30px;
-  margin: 50px;
+  margin: 30px;
   text-align: center;
-  height: 100px;
+  height: 200px;
 }
 p{
   color: #1d2230;
@@ -982,13 +982,21 @@ p{
 
 /* Breakpoints
 --------------------------------------------------------------*/
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .counter__wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .inicio, .acerca{
+    margin: 0px;
+    height: 250px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .inicio, .acerca{
+    margin: 0px;
+    height: 200px;
+  }
   .home__wrapper {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
