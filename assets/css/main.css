@@ -233,7 +233,7 @@ body {
 }
 
 .btn--primary {
-  background-color: var(--color-primary);
+  background-color: #4502ff9a;
 }
 
 .btn--primary:hover {
@@ -357,8 +357,18 @@ body {
 }
 
 .home__title {
-  font-size: var(--fs-biggest);
+  font-size: 40px;
   margin-bottom: 2rem;
+}
+.home__img{
+  border-radius: 50px;
+}
+.home__img-overlay{
+  overflow: hidden;
+}
+.home__img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .home__description {
@@ -404,6 +414,7 @@ body {
 @media screen and (max-width: 768px) {
   .home__img {
     width: 28rem;
+    margin: 20px;
   }
 }
 
